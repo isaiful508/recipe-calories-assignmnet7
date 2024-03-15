@@ -22,39 +22,58 @@ const Header = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="lexend-400  menu menu-horizontal space-x-5 px-1">
-                            <li>Home</li>
-                            <li>Recipes</li>
-                            <li>About</li>
-                            <li>Search</li>
+                        <li>Home</li>
+                        <li>Recipes</li>
+                        <li>About</li>
+                        <li>Search</li>
                     </ul>
                 </div>
                 <div className="navbar-end">
                     <div>
-                        
-                    <div className=" lg:flex justify-between items-center bg-white px-6 py-3 rounded-full">
-                  
-                   <div  className="flex items-center gap-4 ">
-                   <IoSearchSharp className=""></IoSearchSharp>
-                   <input className="outline-none px-6 py-2 rounded-full bg-[#150B2B0D]" type="text"  placeholder="Search"/> 
-                   </div>
-                    
-                  </div>
+
+                        <div className=" lg:flex justify-between items-center bg-white px-6 py-3 rounded-full">
+
+                            <div className="flex items-center gap-4 ">
+                                <IoSearchSharp className=""></IoSearchSharp>
+                                <input className="outline-none px-6 py-2 rounded-full bg-[#150B2B0D]" type="text" placeholder="Search" />
+                            </div>
+
+                        </div>
 
                     </div>
                     <IoMdContact className="bg-slate-200 text-3xl rounded-full text-[#0BE58A]"></IoMdContact>
-                    
+
                 </div>
             </div>
             {/* nav-bar end */}
 
-        {/* banner section start */}
-        <div>
+            {/* banner section start */}
+            <div className="container mx-auto mt-10">
+                {/* <img src="/src/components/images/banner-img.png" alt="" /> */}
+                <div className="hero w-full h-[600px] rounded-xl" style={{ backgroundImage: 'url(/src/components/images/banner-img.png)' }}>
+
+                    <div className="hero- "></div>
+
+                    <div className="hero-content text-center text-white">
+                        <div className="p-20">
+
+                            <h1 className="mb-5 text-5xl lexend-700  ">Discover an exceptional cooking class tailored for you!</h1>
+                            <p className="mb-5">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+
+                            <button className="btn rounded-3xl text-black bg-[#0BE58A] btn-primary">Explore Now</button>
+
+                            <button  className="btn rounded-3xl text-white ml-4 btn-outline">Our Feedback</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
 
-        </div>
-           
-            
+
 
 
 
