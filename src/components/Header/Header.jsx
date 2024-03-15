@@ -49,8 +49,10 @@ const Header = () => {
 
             {/* banner section start */}
             <div className="container mx-auto mt-10">
-                {/* <img src="/src/components/images/banner-img.png" alt="" /> */}
-                <div className="hero w-full h-[600px] rounded-xl" style={{ backgroundImage: 'url(/src/components/images/banner-img.png)' }}>
+               
+                <div className="hero w-full h-[600px] rounded-xl
+                " 
+                style={{ backgroundImage: 'url(/images/banner-img.png)' }}>
 
                     <div className="hero- "></div>
 
