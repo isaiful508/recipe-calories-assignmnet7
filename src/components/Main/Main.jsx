@@ -18,12 +18,12 @@ const Main = () => {
             </div>
 
             {/* main cart start */}
-            <div className="flex gap-5 mt-10">
+            <div className="flex gap- mt-10">
                 <div className="grid grid-cols-2 gap-8">
 
                     {/* first cart */}
                     <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
+                        <figure><img src="" alt="recipe" /></figure>
                         <div className="card-body">
                             <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
                             <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
@@ -49,140 +49,7 @@ const Main = () => {
                         </div>
                     </div>
                     {/* second cart */}
-                    <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
-                            <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
-                            <hr />
-                            <h5 className="text-2xl lexend-500">Ingredients:</h5>
-
-                            <li>Beef</li>
-                            <li>Onion</li>
-                            <li>Garlic</li>
-
-                            <hr />
-                            <div className="flex items-center gap-4">
-                                <CiClock2></CiClock2>
-                                <p> 30 minutes</p>
-                                <MdOutlineLocalFireDepartment></MdOutlineLocalFireDepartment>
-                                <p>600 calories</p>
-                            </div>
-
-
-                            <div className="card-actions">
-                                <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
-                            </div>
-                        </div>
-                    </div>
-                    {/* third cart */}
-                    <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
-                            <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
-                            <hr />
-                            <h5 className="text-2xl lexend-500">Ingredients:</h5>
-
-                            <li>Beef</li>
-                            <li>Onion</li>
-                            <li>Garlic</li>
-
-                            <hr />
-                            <div className="flex items-center gap-4">
-                                <CiClock2></CiClock2>
-                                <p> 30 minutes</p>
-                                <MdOutlineLocalFireDepartment></MdOutlineLocalFireDepartment>
-                                <p>600 calories</p>
-                            </div>
-
-
-                            <div className="card-actions">
-                                <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
-                            </div>
-                        </div>
-                    </div>
-                    {/* fourth cart */}
-                    <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
-                            <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
-                            <hr />
-                            <h5 className="text-2xl lexend-500">Ingredients:</h5>
-
-                            <li>Beef</li>
-                            <li>Onion</li>
-                            <li>Garlic</li>
-
-                            <hr />
-                            <div className="flex items-center gap-4">
-                                <CiClock2></CiClock2>
-                                <p> 30 minutes</p>
-                                <MdOutlineLocalFireDepartment></MdOutlineLocalFireDepartment>
-                                <p>600 calories</p>
-                            </div>
-
-
-                            <div className="card-actions">
-                                <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
-                            </div>
-                        </div>
-                    </div>
-                    {/* five cart */}
-                    <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
-                            <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
-                            <hr />
-                            <h5 className="text-2xl lexend-500">Ingredients:</h5>
-
-                            <li>Beef</li>
-                            <li>Onion</li>
-                            <li>Garlic</li>
-
-                            <hr />
-                            <div className="flex items-center gap-4">
-                                <CiClock2></CiClock2>
-                                <p> 30 minutes</p>
-                                <MdOutlineLocalFireDepartment></MdOutlineLocalFireDepartment>
-                                <p>600 calories</p>
-                            </div>
-
-
-                            <div className="card-actions">
-                                <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
-                            </div>
-                        </div>
-                    </div>
-                    {/* six cart */}
-                    <div className="card p-6 w-96 border-2 bg-base-100 shadow-xl">
-                        <figure><img src="/public/images/food-1.png" alt="recipe" /></figure>
-                        <div className="card-body">
-                            <h2 className="card-title lexend-600">Spaghetti Bolognese</h2>
-                            <p className="lexend-400">Classic Italian pasta dish with savory meat sauce.</p>
-                            <hr />
-                            <h5 className="text-2xl lexend-500">Ingredients:</h5>
-
-                            <li>Beef</li>
-                            <li>Onion</li>
-                            <li>Garlic</li>
-
-                            <hr />
-                            <div className="flex items-center gap-4">
-                                <CiClock2></CiClock2>
-                                <p> 30 minutes</p>
-                                <MdOutlineLocalFireDepartment></MdOutlineLocalFireDepartment>
-                                <p>600 calories</p>
-                            </div>
-
-
-                            <div className="card-actions">
-                                <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
-                            </div>
-                        </div>
-                    </div>
+                    
 
 
                 </div>
