@@ -4,7 +4,7 @@ import './App.css'
 import Header from './components/Header/Header'
 
 import Recipes from './components/Recipes';
-import CookisCart from './components/Main/CookisCart';
+
 import Main from './components/Main/Main';
 
 function App() {
@@ -12,9 +12,18 @@ function App() {
   const [recipes, setRecipes] = useState([]);
 
 
-  //cook staate
+  //cook state
 
-  const [cook, setCook] = useState([])
+  const [cook, setCook] = useState([]);
+
+  // Currently cooking state
+
+  const [currentlyCooking, setCurrentlyCooking] = useState([]);
+
+
+  // Total time and calories state
+  const [totalTime, setTotalTime] = useState(0);
+  const [totalCalories, setTotalCalories] = useState(0);
 
   //recipe data fetch
   useEffect(() => {
@@ -39,7 +48,19 @@ function App() {
 
   }
 
-  console.log(cook);
+  //handle preparing button 
+  const handlePreparingBtn = (p) => {
+    const removeCook = cook.filter((item) => item.recipe_id !== p.recipe_id);
+    setCook(removeCook);
+
+    setCurrentlyCooking([...currentlyCooking, p]);
+
+      // Update total time and total calories
+      setTotalTime(totalTime + p.preparing_time);
+      setTotalCalories(totalCalories + p.calories);
+
+  }
+
 
 
 
@@ -70,20 +91,21 @@ function App() {
           <div className='border-2 rounded-xl p-4 w-[520px]'>
 
 
-            <h2 className="text-2xl lexend-600 text-center mb-2">Want to Cook: </h2>
+            <h2 className="text-2xl lexend-600 text-center mb-2">Want to Cook:{cook.length} </h2>
             <hr />
 
             {/* table want to cook */}
 
 
             {
-              cook.map((item) =>
+              cook.map((item, index) =>
                 <div key={item.id} className="p-8">
                   <table>
 
                     <thead>
 
                       <tr>
+                        <th>Lists</th>
                         <th>Name</th>
                         <th>Time</th>
                         <th>Calories</th>
@@ -91,11 +113,13 @@ function App() {
                     </thead>
 
                     <tbody>
+
                       <tr>
-                       <td>{item.recipe_name}</td>
+                        <td>{index + 1}</td>
+                        <td>{item.recipe_name}</td>
                         <td>{item.preparing_time}</td>
                         <td>{item.calories}</td>
-                        <button className="btn bg-[#0BE58A] rounded-3xl">Preparing</button>
+                        <button onClick={() => handlePreparingBtn(item)} className="btn bg-[#0BE58A] rounded-3xl">Preparing</button>
                       </tr>
                     </tbody>
 
@@ -108,7 +132,7 @@ function App() {
             }
 
 
-            <h2 className="text-2xl lexend-600 text-center mt-4 mb-4">Currently cooking: </h2>
+            <h2 className="text-2xl lexend-600 text-center mt-4 mb-4">Currently cooking: {currentlyCooking.length} </h2>
             <hr />
 
             {/* table curently cooking cokking */}
@@ -122,11 +146,13 @@ function App() {
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>Chicken Caesar Salad</td>
-                    <td>20 minutes</td>
-                    <td>400 calories</td>
-                  </tr>
+                  {currentlyCooking.map((item) => (
+                    <tr key={item.id}>
+                      <td>{item.recipe_name}</td>
+                      <td>{item.preparing_time}</td>
+                      <td>{item.calories}</td>
+                    </tr>
+                  ))}
                 </tbody>
               </table>
             </div>
@@ -135,15 +161,15 @@ function App() {
 
             <div className="flex justify-end gap-4">
               <h5>Total Time = <br />
-                45 minnutes</h5>
+                {totalTime} minutes</h5>
 
 
               <h5>Toatl Calories = <br />
-                1050 calories</h5>
+                {totalCalories} calories</h5>
             </div>
 
 
-            
+
           </div>
 
         </div>
