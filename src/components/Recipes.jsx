@@ -1,11 +1,13 @@
 import { CiClock2 } from "react-icons/ci";
 import { MdOutlineLocalFireDepartment } from "react-icons/md";
 
-const Recipes = ({item}) => {
+const Recipes = ({item, handleCookBtn}) => {
+
+    // console.log(handleCookBtn);
 
     const {recipe_name, recipe_image, short_description, preparing_time, calories, ingredients} = item;
 
-    // console.log(item.ingredients);
+   
     
 
     return (
@@ -37,7 +39,9 @@ const Recipes = ({item}) => {
 
 
                         <div className="card-actions">
-                            <button className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
+
+                            <button onClick={(e) => handleCookBtn(item)} className="btn lexend-500 rounded-3xl bg-[#0BE58A]">Want to Cook</button>
+
                         </div>
                     </div>
                 </div>

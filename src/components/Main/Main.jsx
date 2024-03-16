@@ -16,22 +16,7 @@ const Main = () => {
                 </p>
             </div>
 
-            {/* main cart start */}
-            <div className="flex gap- mt-10">
-                <div className="grid grid-cols-2 gap-8">
-
-                 
-                    
-
-
-                </div>
-
-
-
-            </div>
-
-
-        </div>
+          </div>
     );
 };
 
