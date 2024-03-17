@@ -18,7 +18,7 @@
     {
         "recipe_image": "https://i.ibb.co/wh34Sx5/food-2.png",
         "recipe_id": 2,
-        "recipe_name": "Vegetable Pasta Primavera",
+        "recipe_name": "Vegetable Pasta",
         "short_description": "A colorful and nutritious pasta dish loaded with fresh vegetables.",
         "ingredients": [
             "300 g pasta",
@@ -34,8 +34,8 @@
     {
         "recipe_image": "https://i.ibb.co/wdsRv8H/food-3.jpg",
         "recipe_id": 3,
-        "recipe_name": "Grilled Salmon with Lemon Herb Butter",
-        "short_description": "Tender grilled salmon fillets topped with a flavorful lemon herb butter sauce.",
+        "recipe_name": "Grilled Salmon",
+        "short_description": "Tender grilled salmon fillets topped with a flavorful.",
         "ingredients": [
             "4 salmon fillets",
             "2 tablespoons butter, melted",
@@ -51,14 +51,14 @@
         "recipe_image": "https://i.ibb.co/gzLk2KK/food-4.pngg",
         "recipe_id": 4,
         "recipe_name": "Caprese Salad",
-        "short_description": "A classic Italian salad showcasing the flavors of fresh tomatoes, mozzarella, and basil",
+        "short_description": "A classic Italian salad showcasing the flavors of fresh tomatoes.",
         "ingredients": [
             "2 large tomatoes, sliced",
-            "200 g fresh mozzarella cheese, sliced",
+            "200 g fresh mozzarella cheese",
             "1/4 cup fresh basil leaves",
             "2 tablespoons balsamic glaze",
             "Salt and pepper to taste",
-            "Grated Parmesan cheese for serving"
+            "Grated Parmesan cheese for"
         ],
         "preparing_time": "20 mins",
         "calories": "350 calories"
@@ -67,7 +67,7 @@
         "recipe_image": "https://i.ibb.co/1zQrrNh/food-5.jpg",
         "recipe_id": 5,
         "recipe_name": "Quinoa Vegetable Soup",
-        "short_description": "A hearty and nutritious soup made with quinoa and assorted vegetables.",
+        "short_description": "A hearty and nutritious soup made with quinoa and assorted",
         "ingredients": [
             "1 cup quinoa",
             "2 carrots, diced",
@@ -84,12 +84,12 @@
         "recipe_image": "https://i.ibb.co/qFDkvsc/food-6.jpg",
         "recipe_id": 6,
         "recipe_name": "Mango Avocado Salsa",
-        "short_description": "A refreshing and vibrant salsa perfect for dipping or topping grilled meats",
+        "short_description": "A refreshing and vibrant salsa perfect for dipping or topping",
         "ingredients": [
             "2 ripe mangoes, diced",
             "1 avocado, diced",
             "1/4 cup red onion, finely chopped",
-            "1 jalapeno pepper, seeded and minced",
+            "1 jalapeno pepper",
             "1/4 cup fresh cilantro, chopped",
             "1 lime, juiced",
             "2 tbsp olive oil"

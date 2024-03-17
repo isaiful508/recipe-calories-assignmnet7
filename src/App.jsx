@@ -1,12 +1,12 @@
 
 import { useEffect, useState } from 'react'
-import './App.css'
+
 import Header from './components/Header/Header'
 
 import Recipes from './components/Recipes';
 
 import Main from './components/Main/Main';
-import { ToastContainer} from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { toast } from 'react-toastify';
 
@@ -46,8 +46,8 @@ function App() {
     const isExist = cook.find((pd) => pd.recipe_id == p.recipe_id);
     if (!isExist) {
       setCook([...cook, p]);
-       
-      
+
+
     }
     else {
       toast("Already Exists");
@@ -62,10 +62,10 @@ function App() {
 
     setCurrentlyCooking([...currentlyCooking, p]);
 
-     
-      // sum total time and total calories
-      setTotalTime(totalTime + parseInt(p.preparing_time));
-      setTotalCalories(totalCalories + parseInt(p.calories));
+
+    // sum total time and total calories
+    setTotalTime(totalTime + parseInt(p.preparing_time));
+    setTotalCalories(totalCalories + parseInt(p.calories));
 
   }
 
@@ -79,11 +79,11 @@ function App() {
       <Header></Header>
       <Main></Main>
       <ToastContainer />
-     
 
-      <div className='container  mx-auto flex gap-8 mt-10'>
 
-        <div className=" grid grid-cols-2 gap-4">
+      <div className='container  mx-auto lg:flex gap-8 mt-10'>
+
+        <div className=" grid grid-cols-1 lg:grid-cols-2 gap-4">
           {
             recipes.map((recipe) => <Recipes key={recipe.id}
               item={recipe}
@@ -98,7 +98,7 @@ function App() {
 
         <div>
 
-          <div className='border-2 rounded-xl p-4 w-[520px]'>
+          <div className='border-2 rounded-xl p-4 w-[520px] mt-10'>
 
 
             <h2 className="text-2xl lexend-600 text-center mb-2">Want to Cook:{cook.length} </h2>
@@ -124,7 +124,7 @@ function App() {
 
                     <tbody>
 
-                      <tr>
+                      <tr className='bg-[#28282808] lexend-400'>
                         <td>{index + 1}</td>
                         <td>{item.recipe_name}</td>
                         <td>{item.preparing_time}</td>
@@ -155,7 +155,7 @@ function App() {
                     <th>Calories</th>
                   </tr>
                 </thead>
-                <tbody>
+                <tbody className='bg-[#28282808] lexend-400'>
                   {currentlyCooking.map((item) => (
                     <tr key={item.id}>
                       <td>{item.recipe_name}</td>
@@ -169,7 +169,7 @@ function App() {
 
             <hr />
 
-            <div className="flex justify-end gap-4">
+            <div className="flex lexend-400  justify-end gap-4">
               <h5>Total Time = <br />
                 {totalTime} minutes</h5>
 

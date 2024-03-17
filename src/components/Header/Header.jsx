@@ -18,7 +18,7 @@ const Header = () => {
                             <li>Search</li>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-4xl lexend-700">Recipe Calories</a>
+                    <a className="btn btn-ghost lg:text-4xl lexend-700"><span className="text-[#0BE58A]">Chef</span> Steps</a>
                 </div>
                 <div className="navbar-center hidden lg:flex">
                     <ul className="lexend-400  menu menu-horizontal space-x-5 px-1">
@@ -41,7 +41,7 @@ const Header = () => {
                         </div>
 
                     </div>
-                    <IoMdContact className="bg-slate-200 text-3xl rounded-full text-[#0BE58A]"></IoMdContact>
+                    <IoMdContact className="bg-slate-700 text-3xl rounded-full text-[#0BE58A]"></IoMdContact>
 
                 </div>
             </div>
@@ -49,22 +49,22 @@ const Header = () => {
 
             {/* banner section start */}
             <div className="container mx-auto mt-10">
-               
-                <div className="hero w-full h-[600px] rounded-xl
-                " 
-                style={{ backgroundImage: 'url(/images/banner-img.png)' }}>
 
-                    <div className="hero- "></div>
+                <div className="hero w-[580px] lg:w-full lg:h-[600px] rounded-xl
+                "
+                    style={{ backgroundImage: 'url(/images/banner-img.png)' }}>
+
+                    <div className=""></div>
 
                     <div className="hero-content text-center text-white">
-                        <div className="p-20">
+                        <div className="p-10 lg:p-20">
 
-                            <h1 className="mb-5 text-5xl lexend-700  ">Discover an exceptional cooking class tailored for you!</h1>
-                            <p className="mb-5">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ coding problems to become an exceptionally well world-class Programmer.</p>
+                            <h1 className="mb-5 text-4xl lg:text-5xl lexend-700  ">Discover an exceptional cooking class tailored for you!</h1>
+                            <p className="mb-5 lexend-400">Chef Steps, offers a plethora of nutritious recipes suited for every mealtime. Dive into their collection for quick and healthy dinner ideas, ranging from vibrant salads to hearty soups. With Cooking Light, maintaining a balanced diet has never been easier.</p>
 
-                            <button className="btn rounded-3xl text-black bg-[#0BE58A] btn-primary">Explore Now</button>
+                            <button className="btn lexend-600 rounded-3xl text-black bg-[#0BE58A] btn-primary">Explore Now</button>
 
-                            <button  className="btn rounded-3xl text-white ml-4 btn-outline">Our Feedback</button>
+                            <button className="btn lexend-600 rounded-3xl text-white ml-4 btn-outline">Our Feedback</button>
 
                         </div>
                     </div>
