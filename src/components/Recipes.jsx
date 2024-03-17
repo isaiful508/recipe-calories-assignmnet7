@@ -16,7 +16,7 @@ const Recipes = ({ item, handleCookBtn }) => {
             <div>
 
 
-                <div className="card p-6 h-[900px]  w-96 border-2 bg-base-100 shadow-xl">
+                <div className="card  p-6 h-[900px]  w-96 border-2 bg-base-100 shadow-xl">
                     <figure><img className="rounded-xl" src={recipe_image} alt="recipe" /></figure>
                     <div className="card-body">
                         <h2 className="card-title lexend-600">{recipe_name}</h2>
@@ -57,7 +57,7 @@ const Recipes = ({ item, handleCookBtn }) => {
 };
 
 Recipes.propTypes = {
-    Recipes: PropTypes.object.isRequired,
+    Recipes: PropTypes.object,
     item: PropTypes.object,
     handleCookBtn: PropTypes.func,
 

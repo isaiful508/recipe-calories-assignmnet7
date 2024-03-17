@@ -5,7 +5,8 @@ const Header = () => {
     return (
         // navbar start
         <div className="container mx-auto mt-8">
-            <div className="navbar bg-base-100">
+           <div>
+           <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
                         <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -28,7 +29,7 @@ const Header = () => {
                         <li>Search</li>
                     </ul>
                 </div>
-                <div className="navbar-end">
+                <div className="">
                     <div>
 
                         <div className=" lg:flex justify-between items-center bg-white px-6 py-3 rounded-full">
@@ -70,6 +71,7 @@ const Header = () => {
                     </div>
                 </div>
             </div>
+           </div>
 
 
 
