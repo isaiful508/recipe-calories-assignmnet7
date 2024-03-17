@@ -29,14 +29,14 @@ const Header = () => {
                         <li>Search</li>
                     </ul>
                 </div>
-                <div className="">
+                <div className="navbar-end">
                     <div>
 
                         <div className=" lg:flex justify-between items-center bg-white px-6 py-3 rounded-full">
 
                             <div className="flex items-center gap-4 ">
                                 <IoSearchSharp className=""></IoSearchSharp>
-                                <input className="outline-none px-6 py-2 rounded-full bg-[#150B2B0D]" type="text" placeholder="Search" />
+                                <input  className="hidden lg:flex outline-none px-6 py-2 rounded-full bg-[#150B2B0D]" type="text" placeholder="Search" />
                             </div>
 
                         </div>
