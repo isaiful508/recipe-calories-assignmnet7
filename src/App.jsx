@@ -122,16 +122,18 @@ function App() {
                       </tr>
                     </thead>
 
-                    <tbody>
+                    
+                      <tbody className='rounded-2xl bg-[#28282808]'>
 
-                      <tr className='bg-[#28282808] lexend-400'>
-                        <td>{index + 1}</td>
-                        <td>{item.recipe_name}</td>
-                        <td>{item.preparing_time}</td>
-                        <td>{item.calories}</td>
-                        <button onClick={() => handlePreparingBtn(item)} className="btn bg-[#0BE58A] rounded-3xl">Preparing</button>
-                      </tr>
-                    </tbody>
+                        <tr className=' lexend-400'>
+                          <td>{index + 1}</td>
+                          <td>{item.recipe_name}</td>
+                          <td>{item.preparing_time}</td>
+                          <td>{item.calories}</td>
+                          <button onClick={() => handlePreparingBtn(item)} className="btn bg-[#0BE58A] rounded-3xl">Preparing</button>
+                        </tr>
+                      </tbody>
+                   
 
                   </table>
 
@@ -156,8 +158,10 @@ function App() {
                   </tr>
                 </thead>
                 <tbody className='bg-[#28282808] lexend-400'>
-                  {currentlyCooking.map((item) => (
+                  {currentlyCooking.map((item, index) => (
+                    
                     <tr key={item.id}>
+                      <td>{index + 1}</td>
                       <td>{item.recipe_name}</td>
                       <td>{item.preparing_time}</td>
                       <td>{item.calories}</td>
