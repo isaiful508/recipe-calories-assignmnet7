@@ -6,6 +6,11 @@ import Header from './components/Header/Header'
 import Recipes from './components/Recipes';
 
 import Main from './components/Main/Main';
+import { ToastContainer} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { toast } from 'react-toastify';
+
+
 
 function App() {
   //recipe state
@@ -40,10 +45,12 @@ function App() {
   const handleCookBtn = (p) => {
     const isExist = cook.find((pd) => pd.recipe_id == p.recipe_id);
     if (!isExist) {
-      setCook([...cook, p])
+      setCook([...cook, p]);
+       
+      
     }
     else {
-      alert("Already in kitchen")
+      toast("Already Exists");
     }
 
   }
@@ -55,9 +62,10 @@ function App() {
 
     setCurrentlyCooking([...currentlyCooking, p]);
 
-      // Update total time and total calories
-      setTotalTime(totalTime + p.preparing_time);
-      setTotalCalories(totalCalories + p.calories);
+     
+      // sum total time and total calories
+      setTotalTime(totalTime + parseInt(p.preparing_time));
+      setTotalCalories(totalCalories + parseInt(p.calories));
 
   }
 
@@ -70,6 +78,8 @@ function App() {
 
       <Header></Header>
       <Main></Main>
+      <ToastContainer />
+     
 
       <div className='container  mx-auto flex gap-8 mt-10'>
 
